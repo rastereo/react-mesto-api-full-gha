@@ -12,6 +12,12 @@ const NotFoundError = require('../components/NotFoundError');
 const { loginUser, createUser, logoutUser } = require('../controllers/users');
 const regexUrl = require('../utils/regexConstants');
 
+router.get('/crash-test', () => {
+  setTimeout(() => {
+    throw new Error('Сервер сейчас упадёт');
+  }, 0);
+});
+
 router.post('/signup', celebrate({
   [Segments.BODY]: Joi.object().keys({
     email: Joi.string().required().email(),

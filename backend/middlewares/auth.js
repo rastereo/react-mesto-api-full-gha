@@ -2,7 +2,7 @@ const jwt = require('jsonwebtoken');
 
 const UnauthorizedError = require('../components/UnauthorizedError');
 
-const { NODE_ENV, JWT_SECRET } = process.env;
+const { NODE_ENV, JWT_DEV_SECRET, JWT_SECRET } = process.env;
 
 const auth = (req, res, next) => {
   let payload;
@@ -13,7 +13,7 @@ const auth = (req, res, next) => {
     try {
       payload = jwt.verify(
         token,
-        NODE_ENV === 'production' ? JWT_SECRET : 'dev-secret',
+        NODE_ENV === 'production' ? JWT_SECRET : JWT_DEV_SECRET,
       );
     } catch (err) {
       next(new UnauthorizedError('Передан неверный токен.'));
