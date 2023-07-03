@@ -1,0 +1,8 @@
+.main-form__error {
+  font-weight: 400;
+  height: 28px;
+  font-size: 12px;
+  line-height: 1.25;
+  color: var(--error-color);
+  opacity: 0;
+}

@@ -1,0 +1,86 @@
+/** Fonts **/
+@import url(./vendor/fonts/fonts.css);
+
+/** Normalize **/
+@import url(./vendor/normalize.css);
+
+/** Variables **/
+@import url(./vendor/variables/variables.css);
+
+/** Root **/
+@import url(./blocks/root/root.css);
+
+/** Link **/
+@import url(./blocks/link/link.css);
+
+/** Header **/
+@import url(./blocks/header/header.css);
+@import url(./blocks/header/__logo/header__logo.css);
+@import url(./blocks/header/__container/header__container.css);
+@import url(./blocks/header/__menu/header__menu.css);
+@import url(./blocks/header/__menu/_show/header__menu_show.css);
+@import url(./blocks/header/__hamburger/header__hamburger.css);
+@import url(./blocks/header/__hamburger/_active/header__hamburger_active.css);
+@import url(./blocks/header/__email/header__email.css);
+@import url(./blocks/header/__exit/header__exit.css);
+
+/** Main-form **/
+@import url(./blocks/main-form/main-form.css);
+@import url(./blocks/main-form/__title/main-form__title.css);
+@import url(./blocks/main-form/__form/main-form__form.css);
+@import url(./blocks/main-form/__input/main-form__input.css);
+@import url(./blocks/main-form/__input/_type/main-form__input_type_error.css);
+@import url(./blocks/main-form/__error/main-form__error.css);
+@import url(./blocks/main-form/__error/_visibled/main-form__error_visible.css);
+@import url(./blocks/main-form/__save-button/main-form__save-button.css);
+@import url(./blocks/main-form/__save-button/_disabled/main-form__save-button_disabled.css);
+@import url(./blocks/main-form/__description/main-form__description.css);
+
+/** Profile **/
+@import url(./blocks/profile/profile.css);
+@import url(./blocks/profile/__avatar/profile__avatar.css);
+@import url(./blocks/profile/__avatar-button/profile__avatar-button.css);
+@import url(./blocks/profile/__info/profile__info.css);
+@import url(./blocks/profile/__name/profile__name.css);
+@import url(./blocks/profile/__job/profile__job.css);
+@import url(./blocks/profile/__edit-button/profile__edit-button.css);
+@import url(./blocks/profile/__add-button/profile__add-button.css);
+
+/** Cards **/
+@import url(./blocks/cards/cards.css);
+
+/** Card **/
+@import url(./blocks/card/card.css);
+@import url(./blocks/card/__image/card__image.css);
+@import url(./blocks/card/__delete-button/card__delete-button.css);
+@import url(./blocks/card/__container/card__container.css);
+@import url(./blocks/card/__description/card__description.css);
+@import url(./blocks/card/__like-button/card__like-button.css);
+@import url(./blocks/card/__like-button/_active/card__like-button_active.css);
+@import url(./blocks/card/__like-counter/card__like-counter.css);
+
+/** Footer **/
+@import url(./blocks/footer/footer.css);
+@import url(./blocks/footer/__copyright/footer__copyright.css);
+
+/** Popup **/
+@import url(./blocks/popup/popup.css);
+@import url(./blocks/popup/_opened/popup_opened.css);
+@import url(./blocks/popup/_name/popup_name_image.css);
+@import url(./blocks/popup/__container/popup__container.css);
+@import url(./blocks/popup/__icon/popup__icon.css);
+@import url(./blocks/popup/__icon/_type/popup__icon_type_unsuccessfull.css);
+@import url(./blocks/popup/__title/popup__title.css);
+@import url(./blocks/popup/__title/_position/popup__title_position_center.css);
+@import url(./blocks/popup/__input/popup__input.css);
+@import url(./blocks/popup/__input/_type/popup__input_type_error.css);
+@import url(./blocks/popup/__save-button/popup__save-button.css);
+@import url(./blocks/popup/__save-button/_disabled/popup__save-button_disabled.css);
+@import url(./blocks/popup/__save-button/_margin/popup__save-button_margin_none.css);
+@import url(./blocks/popup/__close-button/popup__close-button.css);
+@import url(./blocks/popup/__container-image/popup__container-image.css);
+@import url(./blocks/popup/__caption/popup__caption.css);
+@import url(./blocks/popup/__figure/popup__figure.css);
+@import url(./blocks/popup/__photo/popup__photo.css);
+@import url(./blocks/popup/__error/popup__error.css);
+@import url(./blocks/popup/__error/_visible/popup__error_visible.css);

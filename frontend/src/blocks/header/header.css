@@ -1,0 +1,17 @@
+.header {
+  max-width: var(--content-size);
+  border-bottom: 1px solid var(--header-border-color);
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  margin: auto;
+  padding: 45px 0 40px;
+}
+
+@media screen and (max-width: 480px) {
+  .header {
+    max-width: 100%;
+    flex-wrap: wrap;
+    padding: 0;
+  }
+}

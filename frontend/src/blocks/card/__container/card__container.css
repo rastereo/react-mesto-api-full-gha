@@ -1,0 +1,10 @@
+.card__container {
+  max-width: 100%;
+  min-height: 79px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--card-background-color);
+  margin: auto;
+  padding: 0 21px;
+}

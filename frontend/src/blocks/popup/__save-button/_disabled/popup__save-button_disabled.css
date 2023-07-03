@@ -1,0 +1,13 @@
+.popup__save-button_disabled {
+  color: var(--form-profile-text-color);
+  border: 2px solid var(--form-profile-text-color);
+  background: none;
+  opacity: 0.2;
+  transition: none;
+  transition: all .6s;
+}
+
+.popup__save-button_disabled:hover {
+  opacity: 0.2;
+  cursor: default;
+}

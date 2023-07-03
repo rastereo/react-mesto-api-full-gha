@@ -1,0 +1,12 @@
+.main-form {
+  width: 358px;
+  margin: 0 auto;
+  padding: 60px 0 40px;
+}
+
+@media screen  and (max-width: 400px) {
+  .main-form {
+    width: 260px;
+    padding-top: 40px;
+  }
+}

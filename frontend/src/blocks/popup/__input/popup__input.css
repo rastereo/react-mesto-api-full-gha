@@ -1,0 +1,17 @@
+.popup__input {
+  width: 100%;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.21;
+  color: var(--form-profile-text-color);
+  border: none;
+  border-bottom: 1px solid var(--form-profile-border-color);
+  padding: 10px 0;
+}
+
+.popup__input::placeholder {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+  color: var(--input-placeholder-color);
+}

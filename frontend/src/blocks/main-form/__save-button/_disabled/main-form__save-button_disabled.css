@@ -1,0 +1,10 @@
+.main-form__save-button_disabled {
+  opacity: .5;
+  transition: none;
+  cursor: default;
+  transition: all .6s;
+}
+
+.main-form__save-button_disabled:hover {
+  opacity: .5;
+}
