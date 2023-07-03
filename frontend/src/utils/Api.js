@@ -89,6 +89,6 @@ class Api {
   }
 }
 
-const api = new Api({ baseUrl: 'http://localhost:3000', });
+const api = new Api({ baseUrl: 'https://api.rastereo.nomoreparties.sbs', });
 
 export default api;

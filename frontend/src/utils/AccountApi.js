@@ -53,6 +53,6 @@ class AccountApi {
   }
 }
 
-const accountApi = new AccountApi('http://localhost:3000');
+const accountApi = new AccountApi('https://api.rastereo.nomoreparties.sbs');
 
 export default accountApi;
