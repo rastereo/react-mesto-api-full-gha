@@ -22,7 +22,7 @@ app.use(requestLogger);
 
 app.use(cors({
   credentials: true,
-  origin: 'http://localhost:3001',
+  origin: 'rastereo.nomoreparties.sbs',
 }));
 
 app.use(router);
