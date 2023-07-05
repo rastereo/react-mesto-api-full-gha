@@ -5,6 +5,8 @@ const mongoose = require('mongoose');
 const cookieParser = require('cookie-parser');
 const { errors } = require('celebrate');
 const cors = require('cors');
+const helmet = require('helmet');
+const rateLimit = require('express-rate-limit');
 
 const router = require('./routes');
 const { errorHandler } = require('./middlewares/error');
@@ -20,10 +22,21 @@ app.use(cookieParser());
 
 app.use(requestLogger);
 
+app.use(rateLimit({
+  windowMs: 15 * 60 * 1000,
+  max: 200,
+}));
+
 app.use(cors({
   credentials: true,
-  origin: 'rastereo.nomoreparties.sbs',
+  origin: [
+    'http://localhost:3001',
+    'https://rastereo.nomoreparties.sbs',
+    'http://rastereo.nomoreparties.sbs',
+  ],
 }));
+
+app.use(helmet());
 
 app.use(router);
 
