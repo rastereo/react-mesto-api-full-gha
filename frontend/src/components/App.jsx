@@ -79,10 +79,12 @@ function App() {
   }
 
   function signOutAccount() {
-    setIsLoggedIn(false);
-    setEmail('');
-
-    accountApi.signOut();
+    accountApi.signOut()
+      .then(() => {
+        setIsLoggedIn(false);
+        setEmail('');
+      })
+      .catch(err => console.log(err))
   }
 
   function handleRegister(password, email) {
