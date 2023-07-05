@@ -24,16 +24,12 @@ app.use(requestLogger);
 
 app.use(rateLimit({
   windowMs: 15 * 60 * 1000,
-  max: 200,
+  max: 100,
 }));
 
 app.use(cors({
   credentials: true,
-  origin: [
-    'http://localhost:3001',
-    'https://rastereo.nomoreparties.sbs',
-    'http://rastereo.nomoreparties.sbs',
-  ],
+  origin: 'https://rastereo.nomoreparties.sbs',
 }));
 
 app.use(helmet());
@@ -46,7 +42,7 @@ app.use(errors());
 
 app.use(errorHandler);
 
-mongoose.connect('mongodb://localhost:27017/mestodb', {
+mongoose.connect('mongodb://127.0.0.1:27017/mestodb', {
   useNewUrlParser: true,
 });
 
