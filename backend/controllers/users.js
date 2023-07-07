@@ -6,7 +6,11 @@ const NotFoundError = require('../components/NotFoundError');
 const BadRequestError = require('../components/BadRequestError');
 const ConflictError = require('../components/ConflictError');
 
-const { NODE_ENV, JWT_SECRET, JWT_DEV_SECRET } = process.env;
+const { 
+  NODE_ENV = 'default', 
+  JWT_SECRET = 'default', 
+  JWT_DEV_SECRET = 'default',
+} = process.env;
 
 const getUsers = (req, res, next) => {
   User.find({})
@@ -100,7 +104,7 @@ const loginUser = (req, res, next) => {
 
       res
         .cookie('jwt', token, {
-          maxAge: 604800,
+          maxAge: 604800000,
           sameSite: true,
           secure: true,
           httpOnly: true,

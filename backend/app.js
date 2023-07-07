@@ -12,7 +12,7 @@ const router = require('./routes');
 const { errorHandler } = require('./middlewares/error');
 const { requestLogger, errorLogger } = require('./middlewares/logger');
 
-const { PORT = 3000 } = process.env;
+const { PORT = 3000, MONGODB_LINK } = process.env;
 
 const app = express();
 
@@ -42,7 +42,7 @@ app.use(errors());
 
 app.use(errorHandler);
 
-mongoose.connect('mongodb://127.0.0.1:27017/mestodb', {
+mongoose.connect(MONGODB_LINK, {
   useNewUrlParser: true,
 });
 
