@@ -12,7 +12,7 @@ const router = require('./routes');
 const { errorHandler } = require('./middlewares/error');
 const { requestLogger, errorLogger } = require('./middlewares/logger');
 
-const { PORT = 3000, MONGODB_LINK } = process.env;
+const { PORT = 3001, MONGODB_LINK } = process.env;
 
 const app = express();
 
